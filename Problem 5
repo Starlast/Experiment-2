@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //INPUT
+    int multiplier = 1;
+    int n = 1;
+    cout<<"  Counting...";
+    cout <<""<< endl;
+    
+    //PROCESS
+    while(n <= 30)
+    {
+        cout <<",";
+        cout<<n;
+        n += multiplier;
+        
+        if(n >= 10){
+            
+             multiplier = 2;
+    }
+        if (n >= 30){
+            
+    }
+        
+    }    
+       
+  
+return 0;
+  
+}
