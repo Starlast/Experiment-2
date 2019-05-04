@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	float Bill,UnpaidBal, Bill1, Bill2, curr_Gallon, prev_gallon ,PenaltyBill;
+	
+	cout<<" Enter the Current Gallon Consumption:   ";
+	cin >>curr_Gallon;
+	Bill1 = (curr_Gallon * 1.10) + 35;
+	
+	cout<<" Enter the Previous Gallon Consumption:  ";
+    cin>>prev_gallon;
+    Bill2 = (prev_gallon * 1.10) + 35;
+    
+    Bill = Bill1 + Bill2 + PenaltyBill;
+    
+	cout << " Enter Unpaid Balance.(if none, enter 0)" << endl;
+	cin >> UnpaidBal;
+	
+	PenaltyBill = UnpaidBal + 20;
+	
+	
+	cout<<" YOUR WATER BILL IS:                    PHP" <<Bill;
+
+ return 0;
+}
