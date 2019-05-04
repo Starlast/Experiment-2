@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //INPUT
+    double n1, n2, n3, largest;
+    
+    cout <<""<< endl;
+    cout <<""<< endl;
+    
+    cout<<"  Enter value of 1st number: ";
+    cin>>n1;
+      cout <<""<< endl;
+        
+    cout<<"  Enter value of 2nd number: ";
+    cin>>n2;
+    
+      cout <<""<< endl;
+        
+    cout<<"  Enter value of 3rd number: ";
+    cin>>n3;
+    
+      cout <<""<< endl;
+      cout <<""<< endl;
+        
+    //PROCESS
+if (n1 > n2)
+{
+    largest = n1;
+}
+else if(n2 > n1)
+{
+    largest = n2;
+}
+if(largest > n3)
+{
+    largest = largest;
+}
+else
+{
+    largest = n3;
+}
+//OUTPUT
+cout<<"  THE LARGEST NUMBER among the three numbers is = "<<largest;
+return 0;
+
+}
