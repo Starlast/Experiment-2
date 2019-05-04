@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    float number;
+    
+    cout << " Type number of your choice" << endl;
+    cin >> number;
+    cout <<""<< endl;
+    cout <<""<< endl;
+    
+    for (float i = 1; i <= 10; ++i) 
+	{
+        cout << number << " * " << i << " =  " << number * i << endl;
+    }
+    cout <<""<< endl;
+    cout<<" The Multiplication table";
+    
+   
+    
+    return 0;
+}
