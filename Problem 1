@@ -1,0 +1,68 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ //INPUT
+ char package;
+ int hours;
+ int bill;
+ 
+ cout<<" Choose  your package below (A,B,C/a,b,c)          ";
+ cout <<""<< endl;
+ cout <<""<< endl;
+ cout<<" For Package A, P995/mo 10 hrs of access are provided.        ";
+ cout <<""<< endl;
+ cout<<" For Package B, P1495/mo 20 hrs of access are provided.       ";
+ cout <<""<< endl;
+ cout<<" For Package C, P1995/mo of unlimited access is provided.     ";
+ cout <<""<< endl;
+ cout <<""<< endl;
+ cout<<"   Enter your package:       ";
+ cin>>package;
+ cout <<""<< endl;
+ cout<<" For package A(Exceeding 10 hours adds 20 Pesos per hour)                           ";
+ cout <<""<< endl;
+ cout<<" For package B(Exceeding 10 hours adds 10 Pesos per hour)                           ";
+ cout <<""<< endl;
+ cout<<" For package C(Exceeding 10 hours adds nothing)                                     ";
+ cout <<""<< endl;
+ cout <<""<< endl;
+ cout<<"   Enter number of Hours:    ";
+ cin>>hours;
+ cout <<""<< endl;
+ //PROCESS
+ 
+ switch(package)
+ {
+     case 'A':
+     case 'a':
+     bill = 995;
+     if(hours>10) 
+ {
+         bill += (hours - 10 ) * 20;
+ }
+     break;
+     case 'B':
+     case 'b':
+     bill = 1495;
+     if(hours > 20)
+ {
+         bill += (hours - 20 ) * 10;
+ }
+         break;
+    case 'C':
+    case 'c':
+    bill = 1995;
+    break;
+    default:
+    cout<<" This is invalid! :(          ";
+    cout <<""<< endl;
+ }
+
+ //output
+ cout <<""<< endl;
+cout<<" Your total bill is:   " <<bill;
+    return 0;
+}
