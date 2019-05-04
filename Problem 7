@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //INPUT
+    int num1, sum;
+    
+    cout<<"  Enter a number: "; cin>>num1;
+    
+    while(num1 > 0){
+        sum = 0;
+        //PROCESS
+        for(int i=1; 
+
+i<=num1; i++){
+            sum += i;
+        }
+        //OUTPUT
+        cout <<""<< endl;
+        cout<<"  Your sum from 1 to " 
+
+<<num1<<"  is =  " <<sum<<endl;
+        cout <<""<< endl;
+        
+        cout<<"  Enter a number: "; cin>>num1;
+    }
+    
+cout <<""<< endl;
+cout <<""<< endl;
+cout<<"  THANK YOU!";
+    return 0;
+}
